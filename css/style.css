@@ -1,0 +1,73 @@
+/* General */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+label {
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 20px;
+  margin-left: 20px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Classes */
+.container {
+  position: relative;
+  min-height: 200px;
+  margin-top: 20px;
+  width: 50%;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 90%, 1.0);
+}
+
+.answers {
+  display: grid;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+/* ID's */
+#quiz {
+  min-height: 180px;
+}
+
+#results {
+  height: 50px;
+  margin-top: 20px;
+}
